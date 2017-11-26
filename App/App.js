@@ -15,7 +15,6 @@ const MainNavigator = StackNavigator(
   },
   {
     initialRouteName: 'InitialScene',
-    headerMode: 'none',
   },
 );
 
