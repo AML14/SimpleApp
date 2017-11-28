@@ -8,10 +8,12 @@ import React, { Component } from 'react';
 import { StackNavigator } from 'react-navigation';
 
 import InitialScene from './scenes/InitialScene';
+import SecondScene from './scenes/SecondScene';
 
 const MainNavigator = StackNavigator(
   {
     InitialScene: { screen: InitialScene },
+    SecondScene: { screen: SecondScene },
   },
   {
     initialRouteName: 'InitialScene',
