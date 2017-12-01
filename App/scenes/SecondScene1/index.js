@@ -24,9 +24,10 @@ import { NavigationActions } from 'react-navigation';
 const navBackToInitial = NavigationActions.back();
 
 // eslint-disable-next-line react/prefer-stateless-function
-class SecondScene extends Component {
+class SecondScene1 extends Component {
   static navigationOptions = {
     header: null,
+    title: 'S1',
   };
 
   constructor(props) {
@@ -65,7 +66,7 @@ class SecondScene extends Component {
             </ButtonNB>
           </Left>
           <Body style={{ flex: 6 }}>
-            <Title>Initial Scene</Title>
+            <Title>Second Scene 1</Title>
           </Body>
           <Right style={{ flex: 1 }}>
             <ButtonNB transparent>
@@ -100,4 +101,4 @@ class SecondScene extends Component {
   }
 }
 
-export default SecondScene;
+export default SecondScene1;

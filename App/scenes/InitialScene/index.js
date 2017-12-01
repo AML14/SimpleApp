@@ -21,7 +21,7 @@ import { NavigationActions } from 'react-navigation';
 const deviceImage = require('../../static/devices.png');
 
 const navToSecond = NavigationActions.navigate({
-  routeName: 'SecondScene',
+  routeName: 'OtherScenes',
   params: {},
   action: {},
 });
