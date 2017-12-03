@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 import {
-  Image,
-  View,
-  Button,
-  ScrollView,
-} from 'react-native';
-import {
   Container,
   Header,
   Title,
   Content,
   Icon,
-  Button as ButtonNB,
+  Button,
   Left,
   Right,
   Body,
@@ -61,17 +55,17 @@ class SecondScene1 extends Component {
       <Container>
         <Header>
           <Left style={{ flex: 1 }}>
-            <ButtonNB transparent onPress={() => this.props.navigation.dispatch(navBackToInitial)}>
+            <Button transparent onPress={() => this.props.navigation.dispatch(navBackToInitial)}>
               <Icon name="arrow-back" />
-            </ButtonNB>
+            </Button>
           </Left>
           <Body style={{ flex: 6 }}>
             <Title>Second Scene 1</Title>
           </Body>
           <Right style={{ flex: 1 }}>
-            <ButtonNB transparent>
+            <Button transparent>
               <Icon name="menu" />
-            </ButtonNB>
+            </Button>
           </Right>
         </Header>
         <Content>
@@ -92,9 +86,9 @@ class SecondScene1 extends Component {
               </Card>
             ))
           }
-          <ButtonNB style={{ alignSelf: 'center' }} onPress={() => this.addCard()}>
+          <Button style={{ alignSelf: 'center' }} onPress={() => this.addCard()}>
             <Text>Add card</Text>
-          </ButtonNB>
+          </Button>
         </Content>
       </Container>
     );

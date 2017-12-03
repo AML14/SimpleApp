@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   Image,
   View,
-  Button,
 } from 'react-native';
 import {
   Container,
@@ -10,7 +9,7 @@ import {
   Title,
   Content,
   Icon,
-  Button as ButtonNB,
+  Button,
   Left,
   Right,
   Body,
@@ -44,9 +43,9 @@ class InitialScene extends Component {
             <Title>Initial Scene</Title>
           </Body>
           <Right style={{ flex: 1 }}>
-            <ButtonNB transparent>
+            <Button transparent>
               <Icon name="menu" />
-            </ButtonNB>
+            </Button>
           </Right>
         </Header>
         <Content scrollEnabled={false} style={{ flex: 1 }} contentContainerStyle={{ flex: 1 }}>
@@ -60,9 +59,9 @@ class InitialScene extends Component {
             />
           </View>
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <ButtonNB style={{ alignSelf: 'center' }} onPress={() => this.props.navigation.dispatch(navToSecond)}>
+            <Button style={{ alignSelf: 'center' }} onPress={() => this.props.navigation.dispatch(navToSecond)}>
               <Text>Next screen</Text>
-            </ButtonNB>
+            </Button>
           </View>
         </Content>
       </Container>

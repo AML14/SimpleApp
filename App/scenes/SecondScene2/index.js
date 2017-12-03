@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Image,
   View,
-  Button,
-  ScrollView,
 } from 'react-native';
 import {
   Container,
@@ -11,7 +8,7 @@ import {
   Title,
   Content,
   Icon,
-  Button as ButtonNB,
+  Button,
   Left,
   Right,
   Body,
@@ -36,37 +33,37 @@ class SecondScene2 extends Component {
       <Container>
         <Header>
           <Left style={{ flex: 1 }}>
-            <ButtonNB transparent onPress={() => this.props.navigation.dispatch(navBackToInitial)}>
+            <Button transparent onPress={() => this.props.navigation.dispatch(navBackToInitial)}>
               <Icon name="arrow-back" />
-            </ButtonNB>
+            </Button>
           </Left>
           <Body style={{ flex: 6 }}>
             <Title>Second Scene 2</Title>
           </Body>
           <Right style={{ flex: 1 }}>
-            <ButtonNB transparent>
+            <Button transparent>
               <Icon name="menu" />
-            </ButtonNB>
+            </Button>
           </Right>
         </Header>
         <Content scrollEnabled={false} style={{ flex: 1 }} contentContainerStyle={{ flex: 1 }}>
           <View style={{ flex: 12, backgroundColor: 'skyblue' }}>
             <View style={{ flex: 3, flexDirection: 'row', backgroundColor: 'darkblue' }}>
-              <View style={{ flex: 2.25, backgroundColor: 'forestgreen' }}>
+              <View style={{ flex: 3, backgroundColor: 'forestgreen' }}>
 
               </View>
-              <View style={{ flex: 0.75, backgroundColor: 'fuchsia' }}>
+              <View style={{ flex: 1, backgroundColor: 'fuchsia' }}>
 
               </View>
             </View>
             <View style={{ flex: 3, flexDirection: 'row', backgroundColor: 'brown' }}>
-              <View style={{ flex: 1.5, backgroundColor: 'firebrick' }}>
+              <View style={{ flex: 2, backgroundColor: 'firebrick' }}>
 
               </View>
-              <View style={{ flex: 0.75, backgroundColor: 'gold' }}>
+              <View style={{ flex: 1, backgroundColor: 'gold' }}>
 
               </View>
-              <View style={{ flex: 0.75, backgroundColor: 'khaki' }}>
+              <View style={{ flex: 1, backgroundColor: 'khaki' }}>
 
               </View>
             </View>

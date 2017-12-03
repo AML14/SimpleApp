@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import {
   Image,
   View,
-  Button,
-  ScrollView,
 } from 'react-native';
 import {
   Container,
@@ -11,15 +9,21 @@ import {
   Title,
   Content,
   Icon,
-  Button as ButtonNB,
+  Button,
   Left,
   Right,
   Body,
   Text,
   Card,
   CardItem,
+  List,
+  ListItem,
+  Item,
+  Input,
 } from 'native-base';
 import { NavigationActions } from 'react-navigation';
+
+const deviceImage = require('../../static/devices.png');
 
 const navBackToInitial = NavigationActions.back();
 
@@ -56,45 +60,265 @@ class SecondScene4 extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <Container>
         <Header>
           <Left style={{ flex: 1 }}>
-            <ButtonNB transparent onPress={() => this.props.navigation.dispatch(navBackToInitial)}>
+            <Button transparent onPress={() => this.props.navigation.dispatch(navBackToInitial)}>
               <Icon name="arrow-back" />
-            </ButtonNB>
+            </Button>
           </Left>
           <Body style={{ flex: 6 }}>
             <Title>Second Scene 4</Title>
           </Body>
           <Right style={{ flex: 1 }}>
-            <ButtonNB transparent>
+            <Button transparent>
               <Icon name="menu" />
-            </ButtonNB>
+            </Button>
           </Right>
         </Header>
         <Content>
+          <View style={{
+              flex: 1,
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              margin: 10,
+            }}
+          >
+            <List style={{ flex: 1 }}>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-document" android="md-document" style={{ color: '#F73B3B' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Simon Mignolet</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-folder" android="md-folder" style={{ color: '#157EFB' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Nathaniel Clyne</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+              <ListItem>
+                <Left style={{ flex: 1 }}>
+                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
+                </Left>
+                <Body style={{ flex: 8 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </ListItem>
+            </List>
+          </View>
+          <View style={{
+              flex: 1,
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              margin: 10,
+            }}
+          >
+            <Button style={{ alignSelf: 'center' }} onPress={() => this.addCard()}>
+              <Text>Add card</Text>
+            </Button>
+          </View>
           {
             this.state.cards.map(card => (
-              <Card>
-                <CardItem header>
-                  <Text>{card.header}</Text>
-                </CardItem>
-                <CardItem>
-                  <Body>
-                    <Text>{card.body}</Text>
-                  </Body>
-                </CardItem>
-                <CardItem footer>
-                  <Text>{card.footer}</Text>
-                </CardItem>
-              </Card>
+              <View style={{
+                  flex: 1,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <Card>
+                  <CardItem header>
+                    <Text>{card.header}</Text>
+                  </CardItem>
+                  <CardItem>
+                    <Body>
+                      <Text>{card.body}</Text>
+                    </Body>
+                  </CardItem>
+                  <CardItem footer>
+                    <Text>{card.footer}</Text>
+                  </CardItem>
+                </Card>
+              </View>
             ))
           }
-          <ButtonNB style={{ alignSelf: 'center' }} onPress={() => this.addCard()}>
-            <Text>Add card</Text>
-          </ButtonNB>
+          <View style={{
+              flex: 1,
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <Image
+              style={{ height: 300, width: 300 }}
+              source={deviceImage}
+            />
+          </View>
+          <View style={{ flex: 1, flexDirection: 'row' }}>
+            <View style={{
+                flex: 2,
+                backgroundColor: 'forestgreen',
+                justifyContent: 'center',
+                alignItems: 'center',
+                margin: 5,
+                padding: 10,
+              }}
+            >
+              <Item rounded>
+                <Input placeholder="Rounded Textbox" />
+              </Item>
+            </View>
+            <View style={{
+                flex: 2,
+                backgroundColor: 'fuchsia',
+                justifyContent: 'center',
+                alignItems: 'center',
+                margin: 5,
+                padding: 10,
+              }}
+            >
+              {/* Los botones deben alinearse internamente, no basta con la vista contenedora */}
+              <Button style={{ alignSelf: 'center' }}><Text>Button Example</Text></Button>
+            </View>
+          </View>
         </Content>
       </Container>
     );

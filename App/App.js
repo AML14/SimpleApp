@@ -23,6 +23,7 @@ const SubNavigator = TabNavigator(
   {
     initialRouteName: 'SecondScene1',
     backBehavior: 'none',
+    tabBarPosition: 'bottom',
   },
 );
 

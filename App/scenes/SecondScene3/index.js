@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Image,
   View,
-  Button,
   ScrollView,
 } from 'react-native';
 import {
@@ -11,7 +9,7 @@ import {
   Title,
   Content,
   Icon,
-  Button as ButtonNB,
+  Button,
   Left,
   Right,
   Body,
@@ -40,24 +38,24 @@ class SecondScene3 extends Component {
       <Container>
         <Header>
           <Left style={{ flex: 1 }}>
-            <ButtonNB transparent onPress={() => this.props.navigation.dispatch(navBackToInitial)}>
+            <Button transparent onPress={() => this.props.navigation.dispatch(navBackToInitial)}>
               <Icon name="arrow-back" />
-            </ButtonNB>
+            </Button>
           </Left>
           <Body style={{ flex: 6 }}>
             <Title>Second Scene 3</Title>
           </Body>
           <Right style={{ flex: 1 }}>
-            <ButtonNB transparent>
+            <Button transparent>
               <Icon name="menu" />
-            </ButtonNB>
+            </Button>
           </Right>
         </Header>
         <Content scrollEnabled={false} style={{ flex: 1 }} contentContainerStyle={{ flex: 1 }}>
           <View style={{ flex: 12, backgroundColor: 'skyblue' }}>
             <View style={{ flex: 3, flexDirection: 'row', backgroundColor: 'darkblue' }}>
               <View style={{
-                  flex: 2.25,
+                  flex: 3,
                   backgroundColor: 'forestgreen',
                   justifyContent: 'center',
                   alignItems: 'center',
@@ -68,14 +66,14 @@ class SecondScene3 extends Component {
                 </Item>
               </View>
               <View style={{
-                  flex: 0.75,
+                  flex: 1,
                   backgroundColor: 'fuchsia',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}
               >
                 {/* Los botones deben alinearse internamente, no basta con la vista contenedora */}
-                <ButtonNB style={{ alignSelf: 'center' }}><Text>Send</Text></ButtonNB>
+                <Button style={{ alignSelf: 'center' }}><Text>Send</Text></Button>
               </View>
             </View>
             <View style={{
@@ -120,7 +118,7 @@ class SecondScene3 extends Component {
               <ScrollView>
                 {/* Las listas deben marcar flex=1 dentro de la vista */}
                 <List style={{ flex: 1 }}>
-                  <ListItem >
+                  <ListItem>
                     <Left style={{ flex: 1 }}>
                       <Icon ios="ios-document" android="md-document" style={{ color: '#F73B3B' }} />
                     </Left>
