@@ -20,6 +20,7 @@ import {
   ListItem,
   Item,
   Input,
+  Radio,
 } from 'native-base';
 import { NavigationActions } from 'react-navigation';
 
@@ -78,6 +79,33 @@ class SecondScene4 extends Component {
           </Right>
         </Header>
         <Content>
+          <View style={{
+              flex: 1,
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: '#a99017',
+            }}
+          >
+            <List style={{ flex: 1 }}>
+              <ListItem style={{ marginLeft: 0 }}>
+                <Body style={{ flex: 9 }}>
+                  <Text>Daily Stand Up</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Radio selected={false} />
+                </Right>
+              </ListItem>
+              <ListItem style={{ marginLeft: 0 }}>
+                <Body style={{ flex: 9 }}>
+                  <Text>Discussion with Client</Text>
+                </Body>
+                <Right style={{ flex: 1 }}>
+                  <Radio selected={true} />
+                </Right>
+              </ListItem>
+            </List>
+          </View>
           <View style={{
               flex: 1,
               flexDirection: 'row',

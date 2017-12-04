@@ -5,6 +5,7 @@
  */
 
 import React, { Component } from 'react';
+import { Platform } from 'react-native';
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
 import InitialScene from './scenes/InitialScene';
@@ -12,6 +13,13 @@ import SecondScene1 from './scenes/SecondScene1';
 import SecondScene2 from './scenes/SecondScene2';
 import SecondScene3 from './scenes/SecondScene3';
 import SecondScene4 from './scenes/SecondScene4';
+
+const tabBarOptions = (Platform.OS === 'android') ?
+  {
+    style: { backgroundColor: '#303F9F' },
+    indicatorStyle: { backgroundColor: '#FF4081' },
+  } :
+  {};
 
 const SubNavigator = TabNavigator(
   {
@@ -24,6 +32,7 @@ const SubNavigator = TabNavigator(
     initialRouteName: 'SecondScene1',
     backBehavior: 'none',
     tabBarPosition: 'bottom',
+    tabBarOptions,
   },
 );
 
