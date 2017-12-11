@@ -21,6 +21,12 @@ const tabBarOptions = (Platform.OS === 'android') ?
   } :
   {};
 
+const tabNavigatorConfig = {
+  backBehavior: 'none',
+  tabBarPosition: 'bottom',
+  tabBarOptions,
+};
+
 const SubNavigator = TabNavigator(
   {
     SecondScene1: { screen: SecondScene1 },
@@ -30,9 +36,7 @@ const SubNavigator = TabNavigator(
   },
   {
     initialRouteName: 'SecondScene1',
-    backBehavior: 'none',
-    tabBarPosition: 'bottom',
-    tabBarOptions,
+    tabNavigatorConfig,
   },
 );
 

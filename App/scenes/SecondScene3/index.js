@@ -152,10 +152,7 @@ class SecondScene3 extends Component {
                     </Right>
                   </ListItem>
                   <ListItem>
-                    <Left style={{ flex: 1 }}>
-                      <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
-                    </Left>
-                    <Body style={{ flex: 8 }}>
+                    <Body style={{ flex: 9 }}>
                       <Text numberOfLines={1}>Dejan Lovren</Text>
                     </Body>
                     <Right style={{ flex: 1 }}>
@@ -166,23 +163,14 @@ class SecondScene3 extends Component {
                     <Left style={{ flex: 1 }}>
                       <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
                     </Left>
-                    <Body style={{ flex: 8 }}>
+                    <Body style={{ flex: 9 }}>
                       <Text numberOfLines={1}>Dejan Lovren</Text>
                     </Body>
-                    <Right style={{ flex: 1 }}>
-                      <Icon name="arrow-forward" />
-                    </Right>
                   </ListItem>
                   <ListItem>
-                    <Left style={{ flex: 1 }}>
-                      <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
-                    </Left>
                     <Body style={{ flex: 8 }}>
                       <Text numberOfLines={1}>Dejan Lovren</Text>
                     </Body>
-                    <Right style={{ flex: 1 }}>
-                      <Icon name="arrow-forward" />
-                    </Right>
                   </ListItem>
                 </List>
               </ScrollView>

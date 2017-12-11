@@ -111,11 +111,10 @@ class SecondScene4 extends Component {
               flexDirection: 'row',
               alignItems: 'center',
               justifyContent: 'center',
-              margin: 10,
             }}
           >
             <List style={{ flex: 1 }}>
-              <ListItem>
+              <ListItem style={{ marginLeft: 0, paddingLeft: 15 }}>
                 <Left style={{ flex: 1 }}>
                   <Icon ios="ios-document" android="md-document" style={{ color: '#F73B3B' }} />
                 </Left>
@@ -126,40 +125,28 @@ class SecondScene4 extends Component {
                   <Icon name="arrow-forward" />
                 </Right>
               </ListItem>
-              <ListItem>
-                <Left style={{ flex: 1 }}>
-                  <Icon ios="ios-folder" android="md-folder" style={{ color: '#157EFB' }} />
-                </Left>
-                <Body style={{ flex: 8 }}>
+              <ListItem style={{ marginLeft: 0, paddingLeft: 15 }}>
+                <Body style={{ flex: 9 }}>
                   <Text numberOfLines={1}>Nathaniel Clyne</Text>
                 </Body>
                 <Right style={{ flex: 1 }}>
                   <Icon name="arrow-forward" />
                 </Right>
               </ListItem>
-              <ListItem>
+              <ListItem style={{ marginLeft: 0, paddingLeft: 15 }}>
                 <Left style={{ flex: 1 }}>
                   <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
                 </Left>
+                <Body style={{ flex: 9 }}>
+                  <Text numberOfLines={1}>Dejan Lovren</Text>
+                </Body>
+              </ListItem>
+              <ListItem style={{ marginLeft: 0, paddingLeft: 15 }}>
                 <Body style={{ flex: 8 }}>
                   <Text numberOfLines={1}>Dejan Lovren</Text>
                 </Body>
-                <Right style={{ flex: 1 }}>
-                  <Icon name="arrow-forward" />
-                </Right>
               </ListItem>
-              <ListItem>
-                <Left style={{ flex: 1 }}>
-                  <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
-                </Left>
-                <Body style={{ flex: 8 }}>
-                  <Text numberOfLines={1}>Dejan Lovren</Text>
-                </Body>
-                <Right style={{ flex: 1 }}>
-                  <Icon name="arrow-forward" />
-                </Right>
-              </ListItem>
-              <ListItem>
+              <ListItem style={{ marginLeft: 0, paddingLeft: 15 }}>
                 <Left style={{ flex: 1 }}>
                   <Icon ios="ios-link" android="md-link" style={{ color: '#6BF442' }} />
                 </Left>
